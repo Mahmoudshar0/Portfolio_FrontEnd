@@ -1,0 +1,132 @@
+:root{
+   --c1: #222831;
+   --c2: #393E46;
+   --c3: #00ADB5;
+   --c4: #EEEEEE;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: "Poppins", sans-serif;
+   background-color: var(--c1);
+}
+.c1{
+   color: var(--c1);
+}
+.c2{
+   color: var(--c2);
+}
+.c3{
+   color: var(--c3);
+}
+.c4{
+   color: var(--c4);
+}
+
+/* start head */
+.head{
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+.head .info h2{
+   font-size: 70px;
+   letter-spacing: 3px;
+   margin: 0;
+}
+.head .info h3{
+   font-size: 45px;
+   margin: 0;
+}
+.head .info .btns .btnhire{
+   background-color: var(--c3);
+   padding: 8px 20px;
+   border-radius: 50px;
+   font-size: 15px;
+   color: var(--c4);
+   font-weight: 600;
+   text-shadow: 2px 2px 5px black;
+   cursor: pointer;
+}
+.head .info .btns .btncv{
+   background-color: var(--c2);
+   padding: 8px 20px;
+   border-radius: 20px;
+   font-weight: 600;
+   color: var(--c4);
+   font-size: 15px;
+   text-shadow: 2px 2px 7px rgb(22, 22, 22);
+   cursor: pointer;
+}
+.head .info img{
+   left: -80px;
+   top: 30px;
+}
+.head .group img:nth-child(2){
+   left: 0;
+   bottom: 0;
+}
+.head i:nth-child(2){
+   position: relative;
+   left: 50%;
+   color: var(--c4);
+   bottom: -80px;
+   background-color: var(--c2);
+   padding: 20px;
+   font-weight: 600;
+   font-size: 25px;
+}
+/* end head */
+
+/* ------------------------------------------------- */
+
+/* start about me  */
+.about{
+   padding: 100px 0;
+}
+.about .text h1{
+   font-size: 45px;
+   font-weight: 700;
+}
+.about .text p{
+   max-width: 75%;
+   font-size: 17px;
+   height: 200px;
+   line-height: 1.7;
+}
+.about .group img:nth-child(2){
+   left: 0;
+   bottom: 50px;
+}
+.about img:nth-last-child(2){
+   left: 100px;
+   top: 0;
+}
+.about > img:nth-last-child(1){
+   left: 45%;
+   top: 150px;
+}
+.about img:nth-last-child(3){
+   left: 25%;
+   bottom: -150px;
+}
+@media (max-width: 900px) {
+   .head .container h2 {
+      font-size: 40px;
+   }
+   .head .container h3 {
+      font-size: 25px;
+   }
+   .about .container {
+      text-align: center;
+   }
+   .about .container p{
+      width: 100%;
+      text-align: center;
+      height: 100%;
+      margin: 0 auto;
+   }
+}
+/* end about me  */
