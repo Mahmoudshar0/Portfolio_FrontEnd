@@ -64,6 +64,9 @@ body{
    left: -80px;
    top: 30px;
 }
+.head .group{
+   animation: head 4s infinite linear;
+}
 .head .group img:nth-child(2){
    left: 0;
    bottom: 0;
@@ -77,6 +80,14 @@ body{
    padding: 20px;
    font-weight: 600;
    font-size: 25px;
+}
+@keyframes head {
+   50%{
+      transform: translateY(20px);
+   }
+   100%{
+      transform: translateY(-20px);
+   }
 }
 /* end head */
 
@@ -95,6 +106,8 @@ body{
    font-size: 17px;
    height: 200px;
    line-height: 1.7;
+   text-align: justify;
+   margin: 0 auto 40px;
 }
 .about .group img:nth-child(2){
    left: 0;
@@ -124,7 +137,6 @@ body{
    }
    .about .container p{
       width: 100%;
-      text-align: center;
       height: 100%;
       margin: 0 auto;
    }
