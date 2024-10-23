@@ -13,6 +13,16 @@ body{
    font-family: "Poppins", sans-serif;
    background-color: var(--c1);
 }
+
+.sec-head{
+   padding-left: 50px;
+   margin: 0;
+}
+.sec-head h1{
+   font-size: 45px;
+   font-weight: 700;
+}
+
 .c1{
    color: var(--c1);
 }
@@ -26,6 +36,9 @@ body{
    color: var(--c4);
 }
 
+.nav{
+   background-color: #2b3442;
+}
 /* start head */
 .head{
    padding-top: 100px;
@@ -95,16 +108,12 @@ body{
 
 /* start about me  */
 .about{
+   background-color: #2b3442;
    padding: 100px 0;
-}
-.about .text h1{
-   font-size: 45px;
-   font-weight: 700;
 }
 .about .text p{
    max-width: 75%;
    font-size: 17px;
-   height: 200px;
    line-height: 1.7;
    text-align: justify;
    margin: 0 auto 40px;
@@ -118,12 +127,12 @@ body{
    top: 0;
 }
 .about > img:nth-last-child(1){
-   left: 45%;
-   top: 150px;
+   left: 40%;
+   top: 60px;
 }
-.about img:nth-last-child(3){
-   left: 25%;
-   bottom: -150px;
+.about .container .arrow{
+   left: 50%;
+   bottom: 20px;
 }
 @media (max-width: 900px) {
    .head .container h2 {
@@ -151,5 +160,48 @@ body{
    .nav .links a{
       font-size: 15px;
    }
+   .about .container .arrow{
+   left: 45%;
+   bottom: -30px;
+   width: 100px;
+   }
+
 }
 /* end about me  */
+
+/* ------------------------------------------------------------ */
+
+/* start works */
+.works{
+   padding: 100px 0;
+}
+.works .container .p{
+   background-color: #404d6186;
+   padding: 25px;
+   border-radius: 10px;
+}
+.works .container .p .text{
+   opacity: 0;
+   transition: 0.5s;
+   text-transform: capitalize;
+}
+.works .container .p .text a{
+   text-decoration: none;
+   color: var(--c3);
+   transition: 0.3s;
+}
+.works .container .p .text a:hover{
+   color: #3fccd3;
+}
+.works .container .p img{
+   transition: 0.3s;
+}
+.works .container .p:hover img{
+   filter: blur(5px);
+}
+.works .container .p:hover .text{
+   opacity: 1;
+}
+.works .container .p
+.works .container .p
+/* end works */
