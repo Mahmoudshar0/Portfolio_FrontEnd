@@ -5,15 +5,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
    <style>
-      *,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
 
 body {
   background-color: #030712;
@@ -24,7 +15,7 @@ body {
   width: 90%;
   max-width: 1536px;
   margin-inline: auto;
-  height: 300px;
+  height: 100px;
   position: relative;
   overflow: hidden;
   mask-image: linear-gradient(
@@ -50,82 +41,111 @@ body {
 
 .itemLeft,
 .itemRight {
-  width: 250px;
-  height: 200px;
-  background-color: #e11d48;
+  width: 100px;
+  height: 100px;
+  background-color: #716a84;
   border-radius: 6px;
   position: absolute;
   animation-timing-function: linear;
-  animation-duration: 30s;
+  animation-duration: 20s;
   animation-iteration-count: infinite;
 }
 
 .itemLeft {
-  left: max(calc(250px * 8), 100%);
+  left: max(calc(150px * 8), 100%);
   animation-name: scrollLeft;
 }
 
 .itemRight {
-  right: max(calc(250px * 8), calc(100% + 200px));
+  right: max(calc(150px * 8), calc(100% + 200px));
   animation-name: scrollRight;
 }
 
 .item1 {
-  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  animation-delay: calc(20s / 8 * (8 - 1) * -1);
 }
 
 .item2 {
-  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  animation-delay: calc(20s / 8 * (8 - 2) * -1);
 }
 
 .item3 {
-  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  animation-delay: calc(20s / 8 * (8 - 3) * -1);
 }
 
 .item4 {
-  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  animation-delay: calc(20s / 8 * (8 - 4) * -1);
 }
 
 .item5 {
-  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  animation-delay: calc(20s / 8 * (8 - 5) * -1);
 }
 
 .item6 {
-  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  animation-delay: calc(20s / 8 * (8 - 6) * -1);
 }
 
 .item7 {
-  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  animation-delay: calc(20s / 8 * (8 - 7) * -1);
 }
 
 .item8 {
-  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  animation-delay: calc(20s / 8 * (8 - 8) * -1);
 }
    </style>
 </head>
 <body>
-   <div class="wrapper">
-      <img src="Images/head.png" width="100%" alt="" class="itemLeft item1">
-      <div class="itemLeft item2"></div>
-      <div class="itemLeft item3"></div>
-      <div class="itemLeft item4"></div>
-      <div class="itemLeft item5"></div>
-      <div class="itemLeft item6"></div>
-      <div class="itemLeft item7"></div>
-      <div class="itemLeft item8"></div>
+  <div class="wrapper">
+      <div class="itemLeft item1">
+        <img src="Images/angular.svg" width="100%" alt="">
+      </div>
+      <div class="itemLeft item2">
+        <img src="Images/bash.svg" alt="">
+      </div>
+      <div class="itemLeft item3">
+        <img src="Images/bootstrap.svg" alt="">
+      </div>
+      <div class="itemLeft item4">
+        <img src="Images/codepen.svg" alt="">
+      </div>
+      <div class="itemLeft item5">
+        <img src="Images/cpp.svg" alt="">
+      </div>
+      <div class="itemLeft item6">
+        <img src="Images/css.svg" alt="">
+      </div>
+      <div class="itemLeft item7">
+        <img src="Images/git.svg" alt="">
+      </div>
+      <div class="itemLeft item8">
+        <img src="Images/meta.png" alt="" width="100">
+      </div>
     </div>
     <div class="wrapper">
       <div class="itemRight item1">
-         <img src="Images/head.png" width="200px" alt="">
-
+        <img src="Images/html.svg" width="100px" alt="">
       </div>
-      <div class="itemRight item2"></div>
-      <div class="itemRight item3"></div>
-      <div class="itemRight item4"></div>
-      <div class="itemRight item5"></div>
-      <div class="itemRight item6"></div>
-      <div class="itemRight item7"></div>
-      <div class="itemRight item8"></div>
+      <div class="itemRight item2">
+        <img src="Images/java.svg" alt="">
+      </div>
+      <div class="itemRight item3">
+        <img src="Images/js.svg" alt="">
+      </div>
+      <div class="itemRight item4">
+        <img src="Images/linux.svg" alt="">
+      </div>
+      <div class="itemRight item5">
+        <img src="Images/typeScript.svg" alt="">
+      </div>
+      <div class="itemRight item6">
+        <img src="Images/redhat.svg" alt="">
+      </div>
+      <div class="itemRight item7">
+        <img src="Images/react.svg" alt="">
+      </div>
+      <div class="itemRight item8">
+        <img src="Images/github.svg" alt="" width="100px">
+      </div>
     </div>
 </body>
 </html>
