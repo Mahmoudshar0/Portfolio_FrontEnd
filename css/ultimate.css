@@ -14,6 +14,14 @@ body{
    background-color: var(--c1);
 }
 
+::-webkit-scrollbar{
+   width: 12px;
+}
+::-webkit-scrollbar-thumb{
+   background-color: #00ADB5;
+   border-radius: 1px;
+}
+
 .sec-head{
    padding-left: 50px;
    margin: 0;
@@ -36,9 +44,12 @@ body{
    color: var(--c4);
 }
 
+/* ---------------------------------------------------------------------- */
+
 .nav{
    background-color: #2b3442;
 }
+
 /* start head */
 .head{
    padding-top: 100px;
@@ -93,6 +104,16 @@ body{
    padding: 20px;
    font-weight: 600;
    font-size: 25px;
+}
+.arrowf{
+   text-decoration: none;
+   display: block;
+   color: white;
+   padding: 20px 25px;
+   text-align: center;
+   background-color: darkslategrey;
+   width: fit-content;
+   margin: 0 auto;
 }
 @keyframes head {
    50%{
@@ -184,28 +205,28 @@ body{
    position: relative;
    overflow: hidden;
    mask-image: linear-gradient(
-     to right,
-     rgba(0, 0, 0, 0),
-     rgba(0, 0, 0, 1) 20%,
-     rgba(0, 0, 0, 1) 80%,
-     rgba(0, 0, 0, 0)
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
    );
- }
- 
- @keyframes scrollLeft {
+}
+
+@keyframes scrollLeft {
    to {
-     left: -200px;
+      left: -200px;
    }
- }
- 
- @keyframes scrollRight {
+}
+
+@keyframes scrollRight {
    to {
-     right: -200px;
+      right: -200px;
    }
- }
- 
- .itemLeft,
- .itemRight {
+}
+
+.itemLeft,
+.itemRight {
    width: 100px;
    height: 100px;
    background-color: #84808e;
@@ -214,49 +235,49 @@ body{
    animation-timing-function: linear;
    animation-duration: 20s;
    animation-iteration-count: infinite;
- }
- 
- .itemLeft {
+}
+
+.itemLeft {
    left: max(calc(150px * 8), 100%);
    animation-name: scrollLeft;
- }
- 
- .itemRight {
+}
+
+.itemRight {
    right: max(calc(150px * 8), calc(100% + 200px));
    animation-name: scrollRight;
- }
- 
- .item1 {
+}
+
+.item1 {
    animation-delay: calc(20s / 8 * (8 - 1) * -1);
- }
- 
- .item2 {
+}
+
+.item2 {
    animation-delay: calc(20s / 8 * (8 - 2) * -1);
- }
- 
- .item3 {
+}
+
+.item3 {
    animation-delay: calc(20s / 8 * (8 - 3) * -1);
- }
- 
- .item4 {
+}
+
+.item4 {
    animation-delay: calc(20s / 8 * (8 - 4) * -1);
- }
- 
- .item5 {
+}
+
+.item5 {
    animation-delay: calc(20s / 8 * (8 - 5) * -1);
- }
- 
- .item6 {
+}
+
+.item6 {
    animation-delay: calc(20s / 8 * (8 - 6) * -1);
- }
- 
- .item7 {
+}
+
+.item7 {
    animation-delay: calc(20s / 8 * (8 - 7) * -1);
- }
- 
- .item8 {
+}
+
+.item8 {
    animation-delay: calc(20s / 8 * (8 - 8) * -1);
- }
+}
 /* end skills */
 
 /* ------------------------------------------------------------ */
@@ -296,3 +317,30 @@ body{
 
 /* end works */
 
+/* --------------------------------------------------- */
+
+/* start footer */
+.footer a i{
+   font-size: 45px;
+   color: #b9c1cd;
+   transition: .3s;
+}
+.footer a:hover .face{
+   color: #2d86fa;
+}
+.footer a:hover .linked{
+   color: #0f86c6 ;
+}
+.footer a:hover .whats{
+   color: rgb(32, 243, 88);
+}
+.footer a:hover .github{
+   color: rgb(113, 32, 243);
+}
+/* end footer */
+.test{
+   font-size: 10px;
+}
+.test2{
+   width: 30px;
+}

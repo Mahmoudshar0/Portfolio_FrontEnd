@@ -23,11 +23,13 @@
 <!-- start nav -->
       <div class="nav pt-4 pb-4">
          <div class="container d-flex align-items-center justify-content-between">
-               <div class="logo fs-3 c4 fw-bold"><a class="c4 text-decoration-none" href="#">SHAR</a></div>
+               <div class="logo fs-3 c4 fw-bold"><a class="c4 text-decoration-none" href="index.html">SHAR</a></div>
                <div class="links">
-                  <a class="text-decoration-none c4 me-3" href="#">home</a>
-                  <a class="text-decoration-none c4 me-3" href="#">about me</a>
-                  <a class="text-decoration-none c4" href="#">contact</a>
+                  <a class="text-decoration-none c4 me-3" href="index.html">Home</a>
+                  <a class="text-decoration-none c4 me-3" href="#about">About Me</a>
+                  <a class="text-decoration-none c4 me-3" href="#skills">Skills</a>
+                  <a class="text-decoration-none c4 me-3" href="#works">My Works</a>
+                  <a class="text-decoration-none c4" href="#contact">Contact Me</a>
             </div>
          </div>
       </div>
@@ -57,14 +59,14 @@
                <img class="position-absolute" src="Images/undraw_programming_re_kg9v.svg" alt="" width="400px">
             </div>
          </div>
-         <i class="fa-solid fa-arrow-down-long"></i>
+         <a href="#skills" class="arrowf"><i class="fa-solid fa-arrow-down-long"></i></a>
       </div>
       <!-- end head -->
 
 <!-- ---------------------------------------------------------------------------------------------------------- -->
 
 <!-- start about -->
-      <div class="about position-relative">
+      <div class="about position-relative" id="about">
          <div class="container d-flex flex-column flex-lg-row align-items-center">
             <div class="text mb-4">
                <div class="sec-head">
@@ -90,7 +92,7 @@
 <!-- -------------------------------------------------------------------------------------------------------------- -->
 
 <!-- start skills -->
-      <div class="skills">
+      <div class="skills" id="skills">
          <div class="container">
             <div class="sec-head pb-2">
                <h1 class="c4">My <span class="c3">Skills</span></h1>
@@ -154,7 +156,7 @@
 <!-- --------------------------------------------------------------------------------------------------------------- -->
 
 <!-- start works -->
-      <div class="works">
+      <div class="works" id="works">
          <div class="container">
             <div class="sec-head p-0">
                <h1 class="c4">My recent <span class="c3">Works</span></h1>
@@ -237,6 +239,24 @@
          </div>
       </div>
 <!-- end works -->
+
+<!-- ------------------------------------------------------------------------------------------------------- -->
+
+<!-- start footer -->
+      <div class="footer pb-5" id="contact">
+         <div class="container">
+            <div class="sec-head p-0">
+               <h1 class="c4">Contact <span class="c3">Me</span></h1>
+            </div>
+            <div class="links d-flex align-items-center justify-content-center gap-4">
+               <a class="text-decoration-none " href="https://www.facebook.com/mody.mahmoud.9674/"><i class="face fa-brands fa-facebook"></i></a>
+               <a class="text-decoration-none " href="tel:+201002778587"><i class="whats fa-brands fa-whatsapp"></i></a>
+               <a class="text-decoration-none " href="https://www.linkedin.com/in/mahmoud-alsoudy"><i class="linked fa-brands fa-linkedin"></i></a>
+               <a class="text-decoration-none " href="https://github.com/Mahmoudshar0"><i class="github fa-brands fa-github"></i></a>
+            </div>
+         </div>
+      </div>
+<!-- end footer -->
 
       <!-- <script src="JS/bootstrap.bundle.min.js"></script> -->
       <!-- <script src="JS/bootstrap.bundle.min.js.map"></script> -->
