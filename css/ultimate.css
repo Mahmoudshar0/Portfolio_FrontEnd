@@ -15,7 +15,7 @@ body{
 }
 
 ::-webkit-scrollbar{
-   width: 12px;
+   width: 14px;
 }
 ::-webkit-scrollbar-thumb{
    background-color: #00ADB5;
@@ -49,7 +49,22 @@ body{
 .nav{
    background-color: #2b3442;
 }
-
+.nav .links a{
+   position: relative;
+}
+.nav .links a:after{
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 3px;
+   left: 0;
+   bottom: 0;
+   background: var(--c3);
+   transition: .3s;
+}
+.nav .links a:hover:after{
+   width: 100%;
+}
 /* start head */
 .head{
    padding-top: 100px;
@@ -111,7 +126,7 @@ body{
    color: white;
    padding: 20px 25px;
    text-align: center;
-   background-color: darkslategrey;
+   background-color: var(--c2);
    width: fit-content;
    margin: 0 auto;
 }
